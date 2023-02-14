@@ -1,0 +1,59 @@
+akshayapatil@Akshayas-MacBook-Pro trunk % sh demo-nlp-hw.sh
+make: `word2vec' is up to date.
+make: `distance' is up to date.
+Starting training using file data.txt
+Vocab size: 219732
+Words in train file: 820446272
+Alpha: 0.000005  Progress: 100.00%  Words/thread/sec: 268.33k  %                                                                                akshayapatil@Akshayas-MacBook-Pro trunk % ls
+
+akshayapatil@Akshayas-MacBook-Pro trunk % ./distance vectors.bin
+Enter word or sentence (EXIT to break): cat
+
+Word: cat  Position in vocabulary: 4488
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                              cats		0.669045
+                                             tabby		0.613587
+                                               dog		0.601388
+                                            feline		0.592639
+                                            kitten		0.555553
+                                          doberman		0.540724
+                                             puppy		0.536203
+                                               pet		0.535245
+                                         dachshund		0.533787
+                                             pooch		0.528888
+
+Enter word or sentence (EXIT to break): she
+
+Word: she  Position in vocabulary: 66
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                               her		0.809736
+                                           herself		0.704397
+                                            mother		0.647373
+                                             woman		0.639336
+                                           husband		0.629784
+                                                he		0.619516
+                                              hers		0.613214
+                                          daughter		0.585447
+                                              girl		0.547601
+                                       grandmother		0.533281
+
+Enter word or sentence (EXIT to break): like
+
+Word: like  Position in vocabulary: 96
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                             crazy		0.562475
+                                             maybe		0.558902
+                                             weird		0.558451
+                                            really		0.548167
+                                             likes		0.532840
+                                             silly		0.524266
+                                              kind		0.520600
+                                            pretty		0.520575
+                                        everywhere		0.519634
+                                          nowadays		0.516719
