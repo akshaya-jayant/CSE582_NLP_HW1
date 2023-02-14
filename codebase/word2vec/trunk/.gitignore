@@ -1,0 +1,7 @@
+.vscode
+# dataset zip file
+*.tar.gz
+# dataset download file
+1-billion-*
+# Normalized text data file
+data.txt  
