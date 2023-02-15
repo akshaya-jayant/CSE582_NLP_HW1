@@ -77,8 +77,9 @@ const int table_size = 1e8;
 int *table;
 
 /*
- To compute negative sampling,
+ Table to compute negative sampling,
  Each word has a weight that is raised to the 3/4 power of its frequency (word count). Simply dividing a word's weight * by the total weights of all the words yields the likelihood of choosing that word.
+ The probability for a selecting a word is just its weight divided by the sum of weights for all words
 */
 void InitUnigramTable() {
   int a, i;
