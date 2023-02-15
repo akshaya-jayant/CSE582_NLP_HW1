@@ -18,10 +18,7 @@ normalize_text() {
 
 
 wget http://www.statmt.org/lm-benchmark/1-billion-word-language-modeling-benchmark-r13output.tar.gz - done
-# tar -xvf 1-billion-word-language-modeling-benchmark-r13output.tar.zip
-# tar -xvf 1-billion-word-language-modeling-benchmark-r13output.tar.gz
-# unzip 1-billion-word-language-modeling-benchmark-r13output.tar.gz 
-# manual unzip
+tar -xvf 1-billion-word-language-modeling-benchmark-r13output.tar.gz
 
 for i in `ls 1-billion-word-language-modeling-benchmark-r13output/training-monolingual.tokenized.shuffled`; do
   normalize_text < 1-billion-word-language-modeling-benchmark-r13output/training-monolingual.tokenized.shuffled/$i >> data.txt
